@@ -8,14 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.0.0-web/css/all.css">
     <title>Shopee Clone</title>
 </head>
 <body>
     <div class="app">
         <div class="header">
-            <div class="grid">
-                <nav class="header_nav">
+            <div class="grid wide">
+                <nav class="header_nav hide-on-mobile-tablet">
                     <ul class="header_nav-list">
                         <li class="header_nav-item header_nav-item-qr  header_nav-item--separate">
                             QR App
@@ -111,7 +113,10 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="fas fa-search header__mobile-search-icon"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
                         <a href="/">
                             <div class="header__logo-img">
                                 <img src="http://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png" alt="logo">
@@ -291,12 +296,26 @@
                     </div>
                 </div>
             </div>
+            <div class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Relation</a>
+                </li>
+                <li class="header__sort-item header__sort-item-active">
+                    <a href="" class="header__sort-link">New</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Best Seller</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Price</a>
+                </li>
+            </div>
         </div>
 
         <div class="container">
-            <div class="grid">
-                <div class="grid__row app_content">
-                    <div class="grid__column-2">
+            <div class="grid wide">
+                <div class="row sm-gutter app_content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="fa-solid fa-list"></i>
@@ -315,8 +334,8 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sort by</span>
                             <button class="home-filter-btn btn">Popular</button>
                             <button class="home-filter-btn btn btn-contained">New</button>
@@ -349,8 +368,8 @@
                         </div>
 
                         <div class="home-products">
-                            <div class="grid__row">
-                                <a href="#" class="grid__column-2-4">
+                            <div class="row sm-gutter">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -386,7 +405,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -422,7 +441,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -458,7 +477,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -494,7 +513,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -530,7 +549,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -566,7 +585,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -602,7 +621,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -638,7 +657,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -674,7 +693,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -710,7 +729,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -746,7 +765,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -782,7 +801,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -818,7 +837,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -854,7 +873,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -890,7 +909,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -926,7 +945,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -962,7 +981,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -998,7 +1017,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -1034,7 +1053,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="grid__column-2-4">
+                                <a href="#" class="col l-2-4 m-4 c-6">
                                     <div class="home-products-item">
                                         <div class="home-product-item_img" style="background-image: url(./assets/image/cartImg.jpg);"></div>
                                         <h4 class="home-products-item__name">Rolls-Royce</h4>
@@ -1113,9 +1132,9 @@
         </div>
 
         <div class="footer">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide footer_content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Let Us Help You</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1129,7 +1148,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Get to Know Us</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1143,7 +1162,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Menu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1157,7 +1176,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Follow</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1180,7 +1199,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-8 c-12">
                         <h3 class="footer__heading">Mobile App</h3>
                         <div class="footer__download">
                             <img src="./assets/image/QR.png" alt="#" class="footer__download-qr">
@@ -1196,10 +1215,10 @@
                     </div>
                 </div>
             </div>
-            <div class="grid">
+            <div class="grid wide">
                 <div class="footer__bottom">
-                    <div class="grid__row">
-                        <p class="footer__text">© 2002-2022, T-Fake-Shopee, Inc. or its affiliates</p>
+                    <div class="row">
+                        <p class="col c-12 footer__text">© 2002-2022, T-Fake-Shopee, Inc. or its affiliates</p>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,6 @@
 *{
     box-sizing: inherit;
+    text-decoration: none;
 }
 
 html{
@@ -7,38 +8,6 @@ html{
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-}
-
-.grid{
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width{
-    width: 100%;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -5px;
-}
-
-.grid__column-2{
-    padding: 0 5px;
-    width: calc(100% / 6);
-}
-
-.grid__column-2-4{
-    padding: 0 5px;
-    text-decoration: none;
-    width: 20%;
-}
-
-.grid__column-10{
-    padding: 0 5px;
-    width: calc(500% / 6);
 }
 
 .btn{
