@@ -10,6 +10,19 @@ html{
     box-sizing: border-box;
 }
 
+html::-webkit-scrollbar-track {
+    padding: 2px 0;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(238,75,43);
+}
+
 .btn{
     min-width: 142px;
     height: 36px;
